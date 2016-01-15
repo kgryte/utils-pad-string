@@ -41,7 +41,7 @@ var str = pad( 'a', 10, {
 });
 // returns 'bbbbbbbbba'
 
-str = pad( 'boop', 12, {
+str = pad( 'a', 12, {
 	'rpad': 'b'
 });
 // returns 'abbbbbbbbbbb'
@@ -91,26 +91,31 @@ str = pad( 'b', 10, opts );
 * Similarly, if `len < str.length`, the input `string` is trimmed.
 
 	``` javascript
+	// Pad right, trim right:
 	var str = pad( 'beep', 2 );
 	// returns 'be'
 
+	// Pad left, trim left:
 	str = pad( 'beep', 2, {
 		'lpad': 'b'
 	});
 	// returns 'ep'
 
+	// Pad both, trim both:
 	str = pad( 'beep', 2, {
 		'lpad': '@',
 		'rpad': '!'
 	});
 	// returns 'ee'
 
+	// Pad both, trim both starting from left:
 	str = pad( 'abcdef', 3, {
 		'lpad': '@',
 		'rpad': '!'
 	});
 	// returns 'cde'
 
+	// Pad both, trim both starting from right:
 	str = pad( 'abcdef', 3, {
 		'lpad': '@',
 		'rpad': '!',
@@ -169,7 +174,7 @@ Options:
 
   -h,    --help                Print this message.
   -V,    --version             Print the package version.
-         --len length          Minimum string length.
+         --len length          String length.
          --lpad str            String used to left pad. Default: ''.
          --rpad str            String used to right pad. Default: ' '.
          --cright              Center right in the event of a tie.

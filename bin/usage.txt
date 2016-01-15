@@ -5,7 +5,7 @@ Options:
 
   -h,    --help                Print this message.
   -V,    --version             Print the package version.
-         --len length          Minimum string length.
+         --len length          String length.
          --lpad str            String used to left pad. Default: ''.
          --rpad str            String used to right pad. Default: ' '.
          --cright              Center right in the event of a tie.
