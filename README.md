@@ -100,19 +100,19 @@ str = pad( 'b', 10, opts );
 	// returns 'ep'
 
 	str = pad( 'beep', 2, {
-		'lpad': '@,
+		'lpad': '@',
 		'rpad': '!'
 	});
 	// returns 'ee'
 
 	str = pad( 'abcdef', 3, {
-		'lpad': '@,
+		'lpad': '@',
 		'rpad': '!'
 	});
 	// returns 'cde'
 
 	str = pad( 'abcdef', 3, {
-		'lpad': '@,
+		'lpad': '@',
 		'rpad': '!',
 		'centerRight': true
 	});
