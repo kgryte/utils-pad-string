@@ -95,7 +95,7 @@ str = pad( 'b', 10, opts );
 	// returns 'be'
 
 	str = pad( 'beep', 2, {
-		'lpad': 'b';
+		'lpad': 'b'
 	});
 	// returns 'ep'
 
@@ -103,20 +103,20 @@ str = pad( 'b', 10, opts );
 		'lpad': '@,
 		'rpad': '!'
 	});
-	// retuns 'ee'
+	// returns 'ee'
 
 	str = pad( 'abcdef', 3, {
 		'lpad': '@,
 		'rpad': '!'
 	});
-	// retuns 'cde'
+	// returns 'cde'
 
 	str = pad( 'abcdef', 3, {
 		'lpad': '@,
 		'rpad': '!',
 		'centerRight': true
 	});
-	// retuns 'bcd'
+	// returns 'bcd'
 	```
 
 
@@ -179,7 +179,7 @@ Options:
 ### Examples
 
 ``` bash
-$ pad beep --len 10 --lpad b --rpad p
+$ padstr beep --len 10 --lpad b --rpad p
 # => bbbbeepppp
 ```
 
